@@ -1,6 +1,6 @@
 #rspec file for caesar_cipher
 #xiwx ixvmrk
-require "./caesar_cipher"
+require "./CaesarCipher/caesar_cipher"
 
 describe "CaesarCipher"do
     
