@@ -14,7 +14,6 @@ def stock_picker(prices)
             end
         end
     end
-    
-    #return result[0] > 0 ? result[1] : "None"
+
     return result[1]
 end
