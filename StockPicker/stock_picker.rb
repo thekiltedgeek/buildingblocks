@@ -5,12 +5,12 @@
 
 def stock_picker(prices)
     result = [0,[]]
-    for i in 0..prices.length - 2 do
-        for j in i + 1..prices.length - 1 do
-            diff = prices[j] - prices[i]
+    prices[0..-2].each_with_index do |buy_price, i|
+        prices[(i + 1)..-1].each_with_index do |sell_price, j| 
+            diff = sell_price - buy_price
             if diff > result[0]
                 result[0] = diff
-                result[1] = [i,j]
+                result[1] = [i,i + j + 1]
             end
         end
     end
